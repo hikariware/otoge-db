@@ -22,10 +22,10 @@
     div.menu-list-item.game-region-settings
       span.menu-list-item-label(data-i18n="option_label_region") ゲーム地域
       .segmented-btn-group.intl-switcher
-        input#gameRegionJP(type='radio' name='gameRegion' value='jp' checked='')
-        label.switch(for='gameRegionJP')
-          span.icon 🇯🇵
-          span(data-i18n="version_jp") 日本版
+        //- input#gameRegionJP(type='radio' name='gameRegion' value='jp' checked='')
+        //- label.switch(for='gameRegionJP')
+        //-   span.icon 🇯🇵
+        //-   span(data-i18n="version_jp") 日本版
         input#gameRegionIntl(type='radio' name='gameRegion' value='intl')
         label.switch(for='gameRegionIntl')
           span.icon 🌏
@@ -41,6 +41,8 @@
         label.switch(for='siteLanguageKo') 한국어
         input#siteLanguageEn(type='radio' name='siteLanguage' value='en')
         label.switch(for='siteLanguageEn') English
+        input#siteLanguageZh(type='radio' name='siteLanguage' value='zh')
+        label.switch(for='siteLanguageZh') 中文
 
     block game_menu
 

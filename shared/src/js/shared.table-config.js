@@ -313,11 +313,12 @@ function tableInitCompleteFunctions(table) {
 
 
   function switchGameRegion(event) {
-    if (event.target.id === 'gameRegionQuickSwitch') {
-      currentRegion = event.target.checked ? 'intl' : 'jp';
-    } else {
-      currentRegion = document.querySelector('input[name="gameRegion"]:checked').value;
-    }
+    // if (event.target.id === 'gameRegionQuickSwitch') {
+    //   currentRegion = event.target.checked ? 'intl' : 'jp';
+    // } else {
+    //   currentRegion = document.querySelector('input[name="gameRegion"]:checked').value;
+    // }
+    currentRegion = 'intl';
 
     // Save the selected region in localStorage
     localStorage.setItem('userGameRegion', currentRegion);

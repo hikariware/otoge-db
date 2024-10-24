@@ -187,6 +187,9 @@ function replaceUnitText(obj) {
     case 'en':
       item_unit = flat_view ? ' charts' : ' songs';
       break;
+    case 'zh':
+      item_unit = flat_view ? ' 個譜面' : ' 首歌';
+      break;
   }
   // Check if the input is an object
   if (obj !== null && typeof obj === 'object') {
